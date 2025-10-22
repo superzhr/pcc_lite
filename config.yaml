@@ -1,0 +1,22 @@
+data_root: ./data/PCN
+batch_size: 4
+epochs: 80
+lr: 0.001
+k_seeds: 512
+up_ratio: 4
+
+# 训练稳态 & 提速
+warmup_coarse_epochs: 10
+use_density_cd: false
+fscore_tau: 0.02
+
+# 下面都是“提速可选项”
+n_partial_train: 1024
+n_gt_train: 2048
+n_partial_val: 1024
+n_gt_val: 4096
+num_workers: 4
+amp: true
+val_every: 5
+grad_accum: 1
+weight_decay: 0.0001

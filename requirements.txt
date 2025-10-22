@@ -1,0 +1,7 @@
+numpy
+tqdm
+einops
+tensorboardX
+matplotlib
+pyyaml
+h5py
